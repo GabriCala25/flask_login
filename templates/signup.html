@@ -15,6 +15,10 @@
             background-color: #f8f9fa;
             margin: 0;
             flex-direction: column;
+            background-image: url("static/images/background_login.jpg");
+            background-size: cover;
+            background-position: center;
+            flex-grow: 1;
         }
 
         form {
@@ -93,8 +97,8 @@
         <input type="password" id="password" name="password" required>
         <br>
         <input type="submit" value="Sign Up">
-    </form>
 
-    <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+        <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+    </form>
 </body>
 </html>
